@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+var version = require('./package.json').version;
 var program = require('commander');
 
 var initcomponent = require('./lib/initcomponent');
@@ -21,5 +22,5 @@ program
   .action(install);
 
 program
-  .version('0.4.10')
+  .version(version)
   .parse(process.argv);
