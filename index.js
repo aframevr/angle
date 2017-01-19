@@ -20,4 +20,6 @@ program
   .description('install component from registry to html file')
   .action(install);
 
-program.parse(process.argv);
+program
+  .version('0.4.10')
+  .parse(process.argv);
