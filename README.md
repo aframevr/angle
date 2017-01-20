@@ -48,9 +48,9 @@ npm run dev
 ```
 
 To publish the component to the ecosystem:
+> make sure github repo exist
 
 ```
-npm publish
 npm run ghpages
 ```
 
