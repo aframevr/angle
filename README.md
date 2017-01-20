@@ -51,7 +51,6 @@ To publish the component to the ecosystem:
 
 ```
 npm publish
-npm run ghpages
 ```
 
 Then submit to the [A-Frame Registry](https://github.com/aframevr/aframe-registry).
