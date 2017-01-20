@@ -9,9 +9,8 @@
     "dev": "budo examples/main.js:build.js --dir examples --port 8000 --live --open",
     "dist": "webpack index.js dist/{{ npmName }}.js && webpack -p index.js dist/{{ npmName }}.min.js",
     "lint": "semistandard -v | snazzy",
-    "prepublish": "npm run dist",
-    "preghpages": "npm run build && shx rm -rf gh-pages && shx mkdir gh-pages && shx cp -r examples/* gh-pages",
-    "ghpages": "npm run preghpages && ghpages -p gh-pages",
+    "mkrepo": "node ./node_modules/gh/bin/gh.js re --new {{ npmName }} --gitignore Node",
+    "publish": "npm run dist && npm run mkrepo && node ./node_modules/ghpages/cli.js",
     "start": "npm run dev"
   },
   "repository": {
@@ -43,6 +42,7 @@
     "shelljs": "^0.7.0",
     "shx": "^0.1.1",
     "snazzy": "^4.0.0",
+    "gh": "^1.12.8",
     "webpack": "^1.13.0"
   },
   "semistandard": {
