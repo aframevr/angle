@@ -10,7 +10,7 @@
     "dist": "webpack index.js dist/{{ npmName }}.js && webpack -p index.js dist/{{ npmName }}.min.js",
     "lint": "semistandard -v | snazzy",
     "mkrepo": "node ./node_modules/gh/bin/gh.js re --new {{ npmName }} --gitignore Node",
-    "ghpages": "npm run dist && npm run mkrepo && node ./node_modules/ghpages/cli.js",
+    "publish": "npm run dist && npm run mkrepo && node ./node_modules/ghpages/cli.js",
     "start": "npm run dev"
   },
   "repository": {
