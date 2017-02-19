@@ -40,19 +40,7 @@ component to get things set up. See [how to write a component][component].
 angle initcomponent
 ```
 
-To develop the component:
-
-```
-npm install
-npm run dev
-```
-
-To publish the component to the ecosystem:
-
-```
-npm publish
-npm run ghpages
-```
+Go to component directory and view README.md
 
 Then submit to the [A-Frame Registry](https://github.com/aframevr/aframe-registry).
 
