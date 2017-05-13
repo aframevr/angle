@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+var version = require('./package.json').version;
 var program = require('commander');
 
 var initcomponent = require('./lib/initcomponent');
@@ -20,4 +21,6 @@ program
   .description('install component from registry to html file')
   .action(install);
 
-program.parse(process.argv);
+program
+  .version(version)
+  .parse(process.argv);
