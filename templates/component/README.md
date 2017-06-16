@@ -13,6 +13,18 @@ For [A-Frame](https://aframe.io).
 | -------- | ----------- | ------------- |
 |          |             |               |
 
+
+### Develop
+
+```
+npm i -g gh browserify budo webpack # install necessary global package
+npm i                               # install local devDependencies
+npm run dev                         # start dev-server port 8000
+npm run mkrepo                      # create new github repo for component if not exist, `npm i -g gh` is necessary
+npm run gh                          # push changes, you should replace remote origin if different
+npm run mknpm                       # publish as npm package
+```
+
 ### Installation
 
 #### Browser
